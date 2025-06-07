@@ -200,3 +200,12 @@ h2 {
 .center-text {
   text-align: center;
 }
+
+/* Footer styles to match header */
+footer {
+  background: #3a8dde;      /* Same color as header */
+  color: #fff;              /* White text for contrast */
+  width: 100%;              /* Stretch across the page */
+  padding: 20px 0;          /* Space above and below the text */
+  margin-top: 40px;         /* Space above the footer */
+}
