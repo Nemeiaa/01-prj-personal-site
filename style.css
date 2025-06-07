@@ -4,14 +4,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  /* Use Libre Baskerville as main font, with common backups */
+  font-family: 'Libre Baskerville', Times New Roman, Times, serif;
+  /* Set the background to the old hero section color */
+  background: #e0e7ef;
   color: #222;
 }
 
 /* Header styles */
 header {
-  background: #333;
+  background: #3a8dde;
   color: #fff;
   padding: 10px 0;
 }
@@ -22,44 +24,62 @@ nav ul {
   text-align: center;
 }
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  display: inline-block; /* Use inline-block for better spacing and box effect */
+  margin: 0 20px; /* More space between buttons */
 }
+
+/* Style for navigation links to look like buttons */
 nav ul li a {
-  color: #fff;
+  display: inline-block; /* Allows padding and background to work */
+  padding: 10px 18px;    /* Adds space around the link text */
+  color: #222;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.2s, color 0.2s; /* Smooth transition for hover */
 }
+
+/* Hover effect for navigation links */
 nav ul li a:hover {
-  text-decoration: underline;
+  background: #111; 
+  color: #e0e7ef;     
 }
 
 /* Hero section styles */
 .hero {
   text-align: center;
-  padding: 40px 10px 20px 10px;
-  background: #e0e7ef;
+  /* Increased padding for a bigger hero section */
+  padding: 80px 10px 50px 10px;
+  /* Set hero background to the About Me header color */
+  background: #3a8dde;
 }
 .hero-img {
-  width: 150px;
-  height: 150px;
+  /* Make the image bigger */
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #333;
-  margin-bottom: 15px;
+  /* More space below the image */
+  margin-bottom: 30px;
 }
 
 /* Section headings */
+
+h1 {
+  font-size: 50px;
+}
+
 h2 {
-  color: #333;
-  margin-top: 30px;
+  color: #3a8dde;
+  margin-top: 70px;
+  text-transform: uppercase; /* Make all headers fully capitalized */
 }
 
 /* Skills list styles */
 .skills-list {
   list-style: none;
   padding: 0;
-  text-align: center;
+  
 }
 .skills-list li {
   display: inline-block;
@@ -71,29 +91,61 @@ h2 {
   font-size: 16px;
 }
 
+/* Skills icons section */
+.skills-icons {
+  display: flex;                /* Place icons in a row */
+  justify-content: center;      /* Center the row */
+  gap: 40px;                    /* Space between each skill */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;       /* Stack icon and label vertically */
+  align-items: center;          /* Center icon and label */
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.skill-label {
+  font-size: 18px;
+  color: #222;
+  margin-top: 5px;
+}
+
 /* Games section */
 .games-list {
-  text-align: center;
   margin: 20px 0;
 }
 
 /* Contact section */
 .contact-icons {
-  text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: 0 10px;
   vertical-align: middle;
+}
+
+/* Class to center text for sections */
+.center-text {
+  text-align: center;
 }
 
 /* Responsive for small screens */
 @media (max-width: 600px) {
   .hero-img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    /* Adjust margin for smaller screens */
+    margin-bottom: 18px;
   }
   .skills-list li {
     font-size: 14px;
@@ -102,5 +154,16 @@ h2 {
   .icon {
     width: 30px;
     height: 30px;
+  }
+  .skills-icons {
+    flex-direction: column;     /* Stack skills vertically on small screens */
+    gap: 20px;
+  }
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-label {
+    font-size: 16px;
   }
 }
