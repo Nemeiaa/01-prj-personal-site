@@ -1,1 +1,106 @@
 /* Add you CSS here */
+
+/* Basic reset for margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 40px 10px 20px 10px;
+  background: #e0e7ef;
+}
+.hero-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+  margin-bottom: 15px;
+}
+
+/* Section headings */
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Skills list styles */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.skills-list li {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+/* Games section */
+.games-list {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Contact section */
+.contact-icons {
+  text-align: center;
+  margin: 20px 0;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .hero-img {
+    width: 100px;
+    height: 100px;
+  }
+  .skills-list li {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
