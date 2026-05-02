@@ -178,6 +178,41 @@ h2 {
   margin: 30px 0;
 }
 
+/* More Projects section uses image-only cards */
+#more-projects h2 {
+  margin-top: 60px;
+}
+
+#more-projects .project-item {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  width: auto;
+  min-height: 0;
+  padding: 0;
+}
+
+#more-projects .more-projects-top {
+  align-items: flex-start;
+}
+
+#more-projects .more-cta {
+  margin-top: 48px;
+}
+
+#more-projects .more-button {
+  padding: 14px 30px;
+}
+
+#more-projects .project-img {
+  display: block;
+  width: 300px;
+  max-width: 80vw;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0;
+}
+
 /* Each project item */
 .project-item {
   background: #fff;
@@ -231,6 +266,17 @@ h2 {
 }
 .project-link:hover {
   background: #222;
+}
+
+/* CTA button specific styling for the "More.." link */
+.more-cta {
+  text-align: center;
+  margin-top: 20px;
+}
+.more-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 /* Responsive: stack boxes vertically and adjust sizes on small screens */
